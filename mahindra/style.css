@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-source3: 'Source Sans 3', sans-serif;
+  --color-white: #ffffff;
+  --color-black: #1d1d1d;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #191919;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  color: var(--color-white);
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  background-color: #1d1d1d;
+  box-shadow: 0rem 0.1rem 1.5rem 0.05rem #131313ba;
+  position: sticky;
+  top: 0rem;
+  left: 0rem;
+  z-index: 100000;
+}
+
+.navbar .nav-right .logo img {
+  width: 6.5rem;
+}
+
+.navbar .nav-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.8rem;
+}
+
+.navbar .nav-right .rightnav-menu {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+.navbar .nav-right .rightnav-menu li {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.navbar .nav-right .rightnav-menu li a{
+  color: var(--color-white);
+}
+
+.navbar .nav-left {
+  width: 50%;
+}
+
+.navbar .nav-left .leftnav-menu {
+  display: flex;
+  justify-content: end;
+  gap: 4rem;
+  font-size: 1.6rem;
+  padding: 0 4rem;
+  font-weight: 400;
+}
+
+.navbar .nav-left .leftnav-menu li a{
+  color: var(--color-white);
+}
+
+.showcase {
+  margin: -6rem 1.5rem 0 1.5rem;
+  height: 67rem;
+  background-image: url("./imgs/showcase.webp");
+  background-position: top;
+  background-size: contain;
+}
+
+.showcase img {
+  width: 80%;
+}
+
+.suv-model {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  background-color: #1d1d1d;
+  /* align-items: center; */
+}
+
+.suv-model .model-head h2 {
+  text-align: center;
+  font-size: 3.8rem;
+  color: var(--color-white);
+  /* font-weight: 600; */
+  /* font-family: 'Lato', sans-serif; */
+  font-family: var(--font-lato);
+}
+
+.suv-model .models {
+  padding-top: 4rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 35rem);
+  gap: 4rem;
+}
+
+.suv-model .models .card {
+  width: 35rem;
+  text-align: center;
+  background-color: #3d3d3d;
+  padding: 1rem 0rem;
+  border-radius: 2rem;
+  color: var(--color-white);
+  line-height: 1.5;
+  transition: 0.5s ease;
+}
+
+.suv-model .models .card:hover{
+    transform: scale(0.98);
+}
+
+.suv-model .models .card hr {
+  background-color: #a2a2a2;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  opacity: 0.3;
+  margin-top: 0.4rem;
+}
+.suv-model .models .card h3 {
+  font-family: var(--font-lato);
+  font-size: 2.5rem;
+}
+
+.suv-model .models .card h4 {
+  font-family: var(--font-lato);
+  font-size: 1.8rem;
+}
+
+.suv-model .models .card h5 {
+  font-family: var(--font-lato);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.suv-model .models .card .card-button {
+  margin: 1.5rem 0 1rem;
+  padding: 0 4rem;
+  position: relative;
+
+}
+
+.suv-model .models .card .card-button .button-para {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+  /* width: 40%; */
+  color: var(--color-black);
+  transform: skew(-15deg);
+  position: relative;
+}
+
+.suv-model .models .card .card-button .button-para p {
+  background-color: var(--color-white);
+  width: 35%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 4rem;
+  text-decoration: underline;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.suv-model .models .card .card-button .button-para p:hover {
+    text-decoration: none;
+}
+
+.footer .footer-top{
+  padding: 4rem 10rem;
+}
+
+.footer .footer-top .footer-disc{
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+  border-bottom: solid 0.3rem #a2a2a28c;
+}
+
+.footer .footer-top .footer-disc p{
+  font-family: var(--font-source3);
+  font-size: 1.6rem;
+}
+
+.footer .footer-top .footer-menu{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.footer .footer-top .footer-menu .footmenu-left{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.footer .footer-top .footer-menu .footmenu-left .social-media ul{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer .footer-top .footer-menu .footmenu-left .social-media ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.05rem solid var(--color-white);
+  border-radius: 50%;
+}
+
+.footer .footer-top .footer-menu .footmenu-left .social-media ul li a{
+  color: var(--color-white);
+}
+
+.footer .footer-top .footer-menu .footmenu-left .app-link h3 a{
+  font-size: 2rem;
+  font-family: var(--font-source3);
+  color: var(--color-white);
+}
+
+.footer .footer-top .footer-menu .footmenu-right {
+  padding: 1.5rem 2.5rem 0 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  row-gap: 5rem;
+}
+
+.footer .footer-top .footer-menu .footmenu-right .col{
+  flex: 1 0 20%;
+}
+
+.footer .footer-top .footer-menu .footmenu-right .col h3{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+  font-family: var(--font-source3);
+}
+
+.footer .footer-top .footer-menu .footmenu-right .col ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer .footer-top .footer-menu .footmenu-right .col ul li a{
+  font-family: var(--font-source3);
+  font-size: 1.3rem;
+  color: var(--color-white);
+}
+
+.footer .footer-bottom{
+  padding: 2rem 20rem;
+  background-color: rgb(49, 49, 49);
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.footer .footer-bottom .btmfoot-left p{
+  font-size: 1.5rem;
+  font-family: var(--font-source3);
+  color: var(--color-white);
+}
+
+.footer .footer-bottom .btmfoot-right ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer .footer-bottom  .btmfoot-right ul li{
+  flex: 1 0 auto;
+  font-family: var(--font-source3);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
