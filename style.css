@@ -91,16 +91,13 @@ body {
   color: var(--color-white);
 }
 
-.showcase {
-  margin: -6rem 1.5rem 0 1.5rem;
-  height: 67rem;
-  background-image: url("./imgs/showcase.webp");
-  background-position: top;
-  background-size: contain;
+.showcase{
+  /* width: 100%; */
+  margin: -6rem 2rem 0rem 2rem;
 }
 
-.showcase img {
-  width: 80%;
+.showcase img{
+  width: 100%;
 }
 
 .suv-model {
